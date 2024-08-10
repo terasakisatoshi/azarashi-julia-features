@@ -1,10 +1,8 @@
 {
-        "test.sh": {
+        "test": {
                 "image": "mcr.microsoft.com/devcontainers/base:jammy",
                 "features": {
-                        "install-pluto": {
-                                "packages": "Pluto"
-                        }
+                        "pluto": {}
                 },
                 "dependsOn": {
                         "ghcr.io/julialang/devcontainer-features/julia:1": {}

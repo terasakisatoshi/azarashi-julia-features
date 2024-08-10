@@ -37,11 +37,13 @@ set -e
 # Provides the 'check' and 'reportResults' commands.
 source dev-container-features-test-lib
 
+echo ${JULIA_PACKAGES}
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
-check "execute command" bash -c "python --version"
-# check "execute command" bash -c "julia -e 'using Pluto'"
+check "execute command" bash -c "which julia"
+check "execute command" bash -c "julia --version"
+check "execute command" bash -c "julia -e 'using Pluto'"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
