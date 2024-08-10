@@ -15,10 +15,9 @@ jobs:
         features:
           - pluto
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:jammy
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - ubuntu:22.04
+          - julia:1.10
+          - mcr.microsoft.com/devcontainers/base:ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
