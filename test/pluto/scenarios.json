@@ -1,14 +1,14 @@
 {
-        "test": {
-                "image": "mcr.microsoft.com/devcontainers/base:jammy",
-                "features": {
-                        "pluto": {}
-                },
-                "dependsOn": {
-                        "ghcr.io/julialang/devcontainer-features/julia:1": {}
-                },
-                "installsAfter": [
-                        "ghcr.io/devcontainers/features/common-utils"
-                ]
-        }
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "pluto": {}
+        },
+        "dependsOn": {
+            "ghcr.io/julialang/devcontainer-features/julia:1": {}
+        },
+        "installsAfter": [
+            "ghcr.io/devcontainers/features/common-utils"
+        ]
+    }
 }
