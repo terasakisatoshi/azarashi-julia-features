@@ -1,0 +1,22 @@
+{
+    "name": "Install Julia packages",
+    "id": "install-julia-packages",
+    "version": "0.1.0",
+    "description": "Install Julia packages to global environment",
+    "options": {
+        "juliaPackages": {
+            "type": "string",
+            "default": "",
+            "description": "Specify Julia packages space separated"
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/julialang/devcontainer-features/julia:1": {}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "postCreateCommand": {
+        "azarashi-julia-features-install-julia-packages": "/usr/local/azarashi-julia-features/postcreate.jl"
+    }
+}

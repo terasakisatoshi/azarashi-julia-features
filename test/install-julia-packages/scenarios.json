@@ -1,0 +1,16 @@
+{
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "install-julia-packages": {
+                "juliaPackages": "Example Revise"
+            }
+        },
+        "dependsOn": {
+            "ghcr.io/julialang/devcontainer-features/julia:1": {}
+        },
+        "installsAfter": [
+            "ghcr.io/devcontainers/features/common-utils"
+        ]
+    }
+}
