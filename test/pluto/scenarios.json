@@ -8,8 +8,7 @@
                         "ghcr.io/julialang/devcontainer-features/julia:1": {}
                 },
                 "installsAfter": [
-                        "ghcr.io/devcontainers/features/common-utils",
-                        "ghcr.io/julialang/devcontainer-features/julia:1"
+                        "ghcr.io/devcontainers/features/common-utils"
                 ]
         }
 }
