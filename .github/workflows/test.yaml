@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - install-pluto
+          - pluto
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,7 +34,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - install-pluto
+          - pluto
     steps:
       - uses: actions/checkout@v4
 
