@@ -10,6 +10,7 @@ else
     JULIA_PATH=/home/${USERNAME}/.juliaup/bin/julia
 fi
 
-$JULIA_PATH -e "using Pkg; Pkg.add(name=\"Pluto\", version=\"$VERSION\")"
+echo "Installing Pluto.jl version $VERSION... using ${JULIA_PATH}"
+${JULIA_PATH} -e "using Pkg; Pkg.add(name=\"Pluto\", version=\"$VERSION\")"
 
 echo "Done!"
