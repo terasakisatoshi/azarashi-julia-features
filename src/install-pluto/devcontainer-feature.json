@@ -1,0 +1,23 @@
+{
+    "name": "Install Pluto packages",
+    "id": "install-pluto",
+    "version": "0.1.0",
+    "description": "Install Pluto packages",
+    "options": {
+        "packages": {
+            "type": "string",
+            "default": "Pluto",
+            "description": "Install Julia packages"
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/julialang/devcontainer-features/julia:1": {
+            "channel": "release"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/julialang/devcontainer-features/julia:1",
+        "ghcr.io/devcontainers/features/python:1"
+    ]
+}
