@@ -44,7 +44,8 @@ echo ${JULIA_PACKAGES}
 check "which julia" which julia
 check "version" julia --version | grep "1."
 check "check Example is installed" julia -e 'using Pkg; "Example" in map(info -> info.name, values(Pkg.dependencies()))'
-check "check BenchmarkTools is installed" julia -e 'using Pkg; "Revise" in map(info -> info.name, values(Pkg.dependencies()))'
+check "check BenchmarkTools is installed" julia -e 'using Pkg; "BenchmarkTools" in map(info -> info.name, values(Pkg.dependencies()))'
+check "check Revise is installed" julia -e 'using Pkg; "Revise" in map(info -> info.name, values(Pkg.dependencies()))'
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
 reportResults
