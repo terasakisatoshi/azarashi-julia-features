@@ -43,8 +43,7 @@ echo ${JULIA_PACKAGES}
 # check <LABEL> <cmd> [args...]
 check "which julia" which julia
 check "version" julia --version | grep "1."
-check "check Pluto is installed" julia -e 'using Pluto'
-
+check "check Pluto is installed" julia -e 'using Pkg; Pkg.status(PackageSpec("Pluto"))'
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
 reportResults

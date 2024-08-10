@@ -14,9 +14,9 @@
         "ghcr.io/julialang/devcontainer-features/julia:1": {}
     },
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/common-utils"
     ],
     "postCreateCommand": {
-        "pluto": "julia -e 'using Pkg; Pkg.add(\"Pluto\")'"
+        "pluto": "julia -e 'using Pkg; Pkg.add(Pluto)'"
     }
 }
