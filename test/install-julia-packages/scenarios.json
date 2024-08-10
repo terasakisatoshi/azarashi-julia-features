@@ -3,7 +3,23 @@
         "image": "mcr.microsoft.com/devcontainers/base:jammy",
         "features": {
             "install-julia-packages": {
-                "juliaPackages": "Example Revise"
+                "juliaPackages": "Example Revise BenchmarkTools"
+            }
+        },
+        "dependsOn": {
+            "ghcr.io/julialang/devcontainer-features/julia:1": {}
+        },
+        "installsAfter": [
+            "ghcr.io/devcontainers/features/common-utils"
+        ]
+    },
+
+    "withpluto": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "pluto": {},
+            "install-julia-packages": {
+                "juliaPackages": "Example Revise BenchmarkTools"
             }
         },
         "dependsOn": {
