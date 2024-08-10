@@ -1,7 +1,7 @@
 {
     "name": "Install Julia packages",
     "id": "install-julia-packages",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Install Julia packages to global environment",
     "options": {
         "juliaPackages": {
