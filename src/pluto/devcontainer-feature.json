@@ -17,6 +17,6 @@
         "ghcr.io/devcontainers/features/common-utils"
     ],
     "postCreateCommand": {
-        "pluto": "julia -e 'using Pkg; Pkg.add(\"Pluto\")'"
+        "pluto": "julia -e 'using Pkg; Pkg.activate(); \"Pluto\" in map(info -> info.name, values(Pkg.dependencies())) || Pkg.add(\"Pluto\")'"
     }
 }
